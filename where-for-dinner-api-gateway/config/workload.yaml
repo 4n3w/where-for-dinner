@@ -24,7 +24,7 @@ spec:
         value: "17"      
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/4n3w/where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-api-gateway
