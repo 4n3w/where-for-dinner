@@ -11,6 +11,10 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   resources:     
     requests:         
       memory: "500M"
