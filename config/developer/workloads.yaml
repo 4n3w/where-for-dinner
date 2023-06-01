@@ -11,6 +11,10 @@ metadata:
 spec:
   env: null
   params:
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
@@ -51,6 +55,10 @@ spec:
   - name: spring_profiles_active
     value: rabbitmq
   params:
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
@@ -100,6 +108,10 @@ spec:
     - name: BP_JVM_VERSION
       value: "17"
   params:
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
@@ -145,6 +157,10 @@ spec:
     - name: BP_JVM_VERSION
       value: "17"
   params:
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
@@ -190,6 +206,10 @@ spec:
   - name: spring_profiles_active
     value: rabbitmq
   params:
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
@@ -236,6 +256,10 @@ spec:
   - name: REACT_APP_PROFILE
     value: nonsecure
   params:
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
@@ -266,6 +290,10 @@ metadata:
     apps.tanzu.vmware.com/has-tests: "true"
 spec:
   params:
+  - name: scanning_image_policy
+    value: trivy-scan-policy-dev
+  - name: scanning_source_policy
+    value: trivy-scan-policy-dev
   - name: ports
     value:
     - port: 80
