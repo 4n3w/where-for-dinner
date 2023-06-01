@@ -1,0 +1,16 @@
+id: 8c3ee453-2f8f-4a0a-8f3d-ad18d895cdd6
+timestamp: 2023-06-01T14:05:34Z
+accelerator:
+  name: where-for-dinner
+  source:
+    image: cxscssa.azurecr.io/tap-1-5-1/tap-packages@sha256:fc3a42bd20129095be899ae1e41125f97d2cdd927a755a43c77a1dafe27d45eb
+fragments:
+  - name: tap-workload
+    source:
+      image: cxscssa.azurecr.io/tap-1-5-1/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+  - name: build-wrapper-maven
+    source:
+      image: cxscssa.azurecr.io/tap-1-5-1/tap-packages@sha256:195a3ca6585fa91c41292584a19c2807c72ecdf986ce860a7147451e89d467d4
+options:
+  interfaceType: http
+  projectName: andrew-where-for-dinner-0
