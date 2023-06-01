@@ -4,6 +4,7 @@ metadata:
   name: where-for-dinner
   namespace: dev
   labels:
+    apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-api-gateway
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
@@ -44,6 +45,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-search
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   env:
   - name: spring_profiles_active
@@ -88,6 +90,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-search-proc
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   env:
   - name: spring_profiles_active
@@ -132,6 +135,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-notify
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   env:
   - name: spring_profiles_active
@@ -176,6 +180,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-availability
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   build:
     env:
@@ -219,6 +224,7 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-ui
     networking.knative.dev/visibility: cluster-local
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   build:
     env:
@@ -257,6 +263,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-crawler
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   params:
   - name: ports

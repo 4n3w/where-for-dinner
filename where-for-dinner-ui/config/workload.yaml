@@ -32,4 +32,4 @@ spec:
       url: https://github.com/4n3w/where-for-dinner
       ref:
         branch: main
-    subPath: where-for-dinner-notify
+    subPath: where-for-dinner-ui
