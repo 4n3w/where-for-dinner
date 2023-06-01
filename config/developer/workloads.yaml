@@ -2,7 +2,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: where-for-dinner
-  namespace: workloads
+  namespace: dev
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-api-gateway
@@ -38,7 +38,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: where-for-dinner-search
-  namespace: workloads
+  namespace: dev
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-search
@@ -82,7 +82,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: where-for-dinner-search-proc
-  namespace: workloads
+  namespace: dev
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-search-proc
@@ -126,7 +126,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: where-for-dinner-notify
-  namespace: workloads
+  namespace: dev
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-notify
@@ -170,7 +170,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: where-for-dinner-availability
-  namespace: workloads
+  namespace: dev
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-availability
@@ -214,7 +214,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: where-for-dinner-ui
-  namespace: workloads
+  namespace: dev
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-ui
@@ -251,7 +251,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: where-for-dinner-crawler
-  namespace: workloads
+  namespace: dev
   labels:
     apps.tanzu.vmware.com/workload-type: server
     app.kubernetes.io/part-of: where-for-dinner-crawler
